@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contacto</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -9,21 +10,21 @@
 
 <body>
 
-<header>
-<nav>
+<header class="header">
+<nav class="nav">
     <h2 class="logo">INFO</h2>
-    <div>
+    <div class="nav-links">
         <a href="index.html">Inicio</a>
         <a href="peleador.html">Carrera</a>
-        <a href="contacto.html">Contacto</a>
+        <a class="active" href="contacto.html">Contacto</a>
     </div>
 </nav>
 </header>
 
 <section class="page">
-    <h1>Contacto</h1>
+    <h1 class="page-title">Contacto</h1>
 
-    <p class="contact-text">Para entrenamientos, colaboraciones o consultas:</p>
+    <p class="section-text">Entrenamientos, colaboraciones o consultas.</p>
 
     <form action=https://formspree.io/f/xvzvkzny method="POST" class="form">
         <input type="text" name="nombre" placeholder="Nombre" required>

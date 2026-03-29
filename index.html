@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Lucas "El Toro"</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luca Guevara</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-<nav>
+<header class="header">
+<nav class="nav">
     <h2 class="logo">INICIO</h2>
-    <div>
-        <a href="index.html">Inicio</a>
+    <div class="nav-links">
+        <a class="active" href="index.html">Inicio</a>
         <a href="peleador.html">Carrera</a>
         <a href="contacto.html">Contacto</a>
     </div>
@@ -24,42 +25,59 @@
     <div class="overlay"></div>
     <div class="hero-content">
         <h1>Luca Guevara</h1>
-        <p>No entreno para competir. Entreno para dominar.</p>
+        <p class="tagline">
+Presión constante. Control total.<br>
+<span class="sub">Grappler en evolución a peleador completo</span>
+</p>
         <div class="buttons">
             <a href="contacto.html" class="btn-primary">Entrená conmigo</a>
-            <a href="peleador.html" class="btn-secondary">Ver carrera</a>
+            <a href="peleador.html" class="btn-ghost">Ver carrera</a>
         </div>
     </div>
 </section>
 
-<section class="about">
-    <h2>Sobre mí</h2>
-    <p>
-        Peleador en evolución constante. Base en grappling, desarrollo completo en striking.
-        Mentalidad enfocada en presión, control y dominio total.
-    </p>
-</section>
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Mentalidad</h2>
 
-<section class="cards">
-    <div class="card">
-        <h3>Disciplina</h3>
-        <p>Entreno incluso cuando no quiero. Ahí es donde se gana ventaja.</p>
-    </div>
+        <p class="highlight">
+            No entreno cuando tengo ganas. Entreno cuando los demás no lo hacen.
+        </p>
 
-    <div class="card">
-        <h3>Presión</h3>
-        <p>El rival no pelea cómodo. Impongo ritmo desde el inicio.</p>
-    </div>
-
-    <div class="card">
-        <h3>Evolución</h3>
-        <p>No me quedo en una sola habilidad. Desarrollo completo.</p>
+        <p class="section-text">
+            La diferencia no está en el talento. Está en la constancia bajo presión.
+        </p>
     </div>
 </section>
 
-<footer>
-    <p>© 2026 Lucas MMA</p>
-</footer>
+<section class="section alt">
+    <h2 class="section-title">Estilo de pelea</h2>
 
-</body>
-</html>
+    <div class="style-grid">
+        <div class="style-item">Presión constante</div>
+        <div class="style-item">Clinch dominante</div>
+        <div class="style-item">Transiciones rápidas</div>
+        <div class="style-item">Control en el suelo</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Principios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Ritmo</h3>
+            <p>El combate se pelea a mi velocidad.</p>
+        </div>
+
+        <div class="card">
+            <h3>Presión</h3>
+            <p>No hay espacio. No hay pausa.</p>
+        </div>
+
+        <div class="card">
+            <h3>Control</h3>
+            <p>Cada posición tiene intención.</p>
+        </div>
+    </div>
+</section>
