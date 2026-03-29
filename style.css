@@ -1,90 +1,86 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #0a0a0a;
-    color: darkolivegreen;
-}
-.container h1 {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 48px;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    position: relative;
+    background-color: #0b0f0b;
+    color: #e5e5e5;
 }
 
-.container h1::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #00ff88;
-    margin: 10px auto 0;
-}
 /* NAV */
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(20, 20, 20, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #1f1f1f;
+    padding: 20px 50px;
+    background-color: #111;
 }
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #aaa;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #00ff88;
+    color: #556b2f;
 }
 
 .logo {
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    color: #00ff88;
+    color: #556b2f;
 }
 
 /* HERO */
 .hero {
-    height: 80vh;
+    position: relative;
+    height: 90vh;
+    background: url("https://via.placeholder.com/1200") center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, transparent, #0a0a0a),
-                url("https://via.placeholder.com/900") center/cover;
 }
 
-.hero-text {
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+    position: relative;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Oswald', sans-serif;
 }
 
-.hero p {
-    color: #aaa;
-}
-
-.btn {
-    display: inline-block;
+.buttons {
     margin-top: 20px;
-    padding: 12px 30px;
-    border: 1px solid #00ff88;
-    color: #00ff88;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #00ff88;
-    color: black;
+.btn-primary {
+    background: #556b2f;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    border: 1px solid #556b2f;
+    color: #556b2f;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2 {
+    color: #556b2f;
 }
 
 /* CARDS */
@@ -92,24 +88,29 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 60px 20px;
+    padding: 40px;
 }
 
 .card {
     background: #111;
-    padding: 25px;
-    width: 260px;
-    border: 1px solid #1f1f1f;
-    transition: 0.3s;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #222;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: #00ff88;
+    border-color: #556b2f;
 }
 
-.card h3 {
-    color: #00ff88;
+/* PAGE */
+.page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.page h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 40px;
 }
 
 /* STATS */
@@ -117,34 +118,23 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin: 50px 0;
-}
-
-.stats div {
-    text-align: center;
+    margin-bottom: 40px;
 }
 
 .stats h2 {
-    font-size: 42px;
-    color: #00ff88;
+    color: #556b2f;
 }
 
-/* INFO */
-.info-box {
+/* BOX */
+.box {
     background: #111;
-    padding: 25px;
+    padding: 20px;
     margin: 20px auto;
-    max-width: 600px;
-    border-left: 3px solid #00ff88;
+    max-width: 500px;
+    border-left: 3px solid #556b2f;
 }
 
-/* CONTACTO */
-.contact-box {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #aaa;
-}
-
+/* FORM */
 .form {
     display: flex;
     flex-direction: column;
@@ -154,38 +144,23 @@ nav a:hover {
 
 .form input,
 .form textarea {
-    margin-bottom: 12px;
-    padding: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
     background: #111;
     border: 1px solid #222;
     color: white;
 }
 
-.form input:focus,
-.form textarea:focus {
-    outline: none;
-    border-color: #00ff88;
-}
-
 button {
-    background: transparent;
-    color: darkolivegreen;
-    border: 1px solid darkolivegreen;
-    padding: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: darkolivegreen;
-    color: black;
+    background: #556b2f;
+    border: none;
+    padding: 10px;
+    color: white;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #050505;
-    color: #666;
-    border-top: 1px solid #1f1f1f;
+    background: #111;
 }
